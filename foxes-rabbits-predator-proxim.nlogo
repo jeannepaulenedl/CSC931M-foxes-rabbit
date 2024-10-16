@@ -110,7 +110,7 @@ to move-foxes
 end
 
 to eat-rabbits ; foxes eat rabbits within proximity
-  let nearby-rabbits rabbits in-radius 0.5 ; foxes can only catch rabbits within a radius of 2 units
+  let nearby-rabbits rabbits in-radius 0.5 ; foxes can only catch rabbits within a radius of 0.5 units
   let prey one-of nearby-rabbits
   if prey != nobody [
     ask prey [ die ]
